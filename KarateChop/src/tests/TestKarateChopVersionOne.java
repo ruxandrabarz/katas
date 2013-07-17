@@ -9,7 +9,7 @@ import kata.KarateChopVersionOne;
 public class TestKarateChopVersionOne {
 
 	@Test
-	public void testChopEmptyArray() {
+	public void testChop() {
 		KarateChopVersionOne karateChop = new KarateChopVersionOne();
 		assertEquals(-1, karateChop.chop(-1, buildArray()));
 		assertEquals(0, karateChop.chop(1, buildArray(1)));
@@ -24,10 +24,4 @@ public class TestKarateChopVersionOne {
 	private int[] buildArray(int ... values) {
 		return values;
 	}
-
-//	@Test
-//	public void testChopArrayNotContainingValue() {
-//		KarateChopVersionOne karateChop = new KarateChopVersionOne();
-//		assertEquals(-1, karateChop.chop(2, new int[] { 1, 3, 5 }));
-//	}
 }
